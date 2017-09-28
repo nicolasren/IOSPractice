@@ -12,4 +12,6 @@
 
 @property(weak, nonatomic)UILabel *demoName;
 
+- (void)configData:(NSDictionary *)dic;
+
 @end
