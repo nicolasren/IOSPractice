@@ -23,8 +23,21 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
+    if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+        CGFloat cellWidth = [[UIApplication sharedApplication]keyWindow].bounds.size.width;
+        _demoName = [[UILabel alloc]initWithFrame:CGRectMake(0, 5, cellWidth, 60)];
+        _demoName.backgroundColor = [UIColor grayColor];
+        _demoName.textColor = [UIColor redColor];
+        _demoName.textAlignment = NSTextAlignmentCenter;
+        _demoName.font = [UIFont systemFontOfSize:25];
+        [self.contentView addSubview:_demoName];
+    }
     
     return self;
+}
+
+- (void)configData:(NSDictionary *)dic{
+    _demoName.text = [dic objectForKey:@"name"];
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @interface DemoListCellTableViewCell : UITableViewCell
 
-@property(weak, nonatomic)UILabel *demoName;
+@property(strong, nonatomic)UILabel *demoName;
 
 - (void)configData:(NSDictionary *)dic;
 
