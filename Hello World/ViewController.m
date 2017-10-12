@@ -14,6 +14,8 @@
 
 @property(nonatomic, strong) NSArray *arr;
 @property(nonatomic, strong) DemoListDataSource *dataSource;
+@property(nonatomic, strong) DemoListCellTableViewCell *configureCell;
+@property(nonatomic, strong) TableViewCellConfigureBlock configureBlock;
 
 @end
 
@@ -22,7 +24,7 @@
 - (NSArray *)arr {
     
     if(!_arr){
-        _arr = @[@{@"name":@"eBook"}];
+        _arr = @[@{@"name":@"eBook"}, @{@"name":@"OverSeasTripGuide"}];
     }
     
     return _arr;
@@ -33,19 +35,19 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     _demoListView = [[UITableView alloc]initWithFrame:[[UIApplication sharedApplication].keyWindow bounds]];
-    
     [_demoListView registerClass:[DemoListCellTableViewCell class] forCellReuseIdentifier:@"cell"];
-    
+    _demoListView.separatorInset = UIEdgeInsetsMake(0, 10, 0, 10);
+    _demoListView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     _demoListView.rowHeight = 70;
     
     [self.view addSubview: _demoListView];
     
-    TableViewCellConfigureBlock configureCell = ^(DemoListCellTableViewCell *cell, NSDictionary *dic){
-        [cell configData:dic];
+    self.configureCell = [[DemoListCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    self.configureBlock = ^(DemoListCellTableViewCell *cell, NSDictionary *data){
+        [cell configData:data];
     };
+    self.dataSource = [[DemoListDataSource alloc] initWithItems:self.arr cellIdentifier:@"cell" configureCellBlock:self.configureBlock];
     
-    self.dataSource = [[DemoListDataSource alloc]（id）initWithItems:self.arr cellIdentifier:@"cell" configureCellBlock:configureCell];
-        
     _demoListView.dataSource = self.dataSource;
 
 }
