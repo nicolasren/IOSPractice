@@ -37,7 +37,7 @@
     _demoListView = [[UITableView alloc]initWithFrame:[[UIApplication sharedApplication].keyWindow bounds]];
     [_demoListView registerClass:[DemoListCellTableViewCell class] forCellReuseIdentifier:@"cell"];
     _demoListView.separatorInset = UIEdgeInsetsMake(0, 10, 0, 10);
-    _demoListView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+//    _demoListView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     _demoListView.rowHeight = 70;
     
     [self.view addSubview: _demoListView];

@@ -47,6 +47,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
     id item = [self itemAtIndexPath:indexPath];
     self.configureCellBlock(cell, item);
+    
+//    //2.调整(iOS8以上)tableView边距(与上面第2步等效,二选一即可)
+//    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+//        cell.preservesSuperviewLayoutMargins = NO;
+//    }
+//    //3.调整(iOS8以上)view边距
+//    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+//        [cell setLayoutMargins:UIEdgeInsetsZero];
+//    }
     return cell;
 }
 
