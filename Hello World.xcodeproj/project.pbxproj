@@ -37,6 +37,7 @@
 		E006ABE21F9B49A2004E1430 /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE11F9B49A2004E1430 /* BookListViewController.m */; };
 		E006ABE51F9B49E0004E1430 /* BookListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */; };
 		E006ABEC1F9D8BC7004E1430 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEB1F9D8BC7004E1430 /* BookModel.m */; };
+		E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */; };
 		E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D9903E1F7203A3003437D8 /* AppDelegate.m */; };
 		E0D990421F7203A3003437D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D990411F7203A3003437D8 /* ViewController.m */; };
 		E0D990451F7203A3003437D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D990431F7203A3003437D8 /* Main.storyboard */; };
@@ -127,6 +128,8 @@
 		E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookListTableViewCell.m; sourceTree = "<group>"; };
 		E006ABEA1F9D8BC7004E1430 /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BookModel.h; path = "Hello World/Reader/BookModel.h"; sourceTree = SOURCE_ROOT; };
 		E006ABEB1F9D8BC7004E1430 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BookModel.m; path = "Hello World/Reader/BookModel.m"; sourceTree = SOURCE_ROOT; };
+		E006ABED1F9D8C7F004E1430 /* TextEdgeInsetsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextEdgeInsetsLabel.h; sourceTree = "<group>"; };
+		E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextEdgeInsetsLabel.m; sourceTree = "<group>"; };
 		E0D9903A1F7203A3003437D8 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D9903D1F7203A3003437D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0D9903E1F7203A3003437D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				4E6D965E1F74B7E00016A82D /* MainView.m */,
 				4E6D96611F7A9DA50016A82D /* DemoListCellTableViewCell.h */,
 				4E6D96621F7A9DA50016A82D /* DemoListCellTableViewCell.m */,
+				E006ABED1F9D8C7F004E1430 /* TextEdgeInsetsLabel.h */,
+				E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */,
 			);
 			name = View;
 			path = "New Group";
@@ -543,6 +548,7 @@
 				E006ABCE1F9B3298004E1430 /* CXMLNamespaceNode.m in Sources */,
 				E006ABCD1F9B3298004E1430 /* CXMLElement_ElementTreeExtensions.m in Sources */,
 				E006ABD41F9B3298004E1430 /* UIImage+ImageEffects.m in Sources */,
+				E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */,
 				4E6D965F1F74B7E00016A82D /* MainView.m in Sources */,
 				E006ABCB1F9B3298004E1430 /* CXMLElement.m in Sources */,
 				E0D9904D1F7203A3003437D8 /* main.m in Sources */,
