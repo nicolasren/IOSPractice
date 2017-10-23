@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextEdgeInsetsLabel.h"
 
 @interface DemoListCellTableViewCell : UITableViewCell
 
-@property(strong, nonatomic)UILabel *demoName;
+@property(strong, nonatomic) TextEdgeInsetsLabel *demoName;
 
 - (void)configData:(NSDictionary *)dic;
 

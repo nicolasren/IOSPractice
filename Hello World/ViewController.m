@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DemoListDataSource.h"
 #import "DemoListCellTableViewCell.h"
+#import "BookListViewController.h"
 
 @interface ViewController ()
 
@@ -49,12 +50,28 @@
     self.dataSource = [[DemoListDataSource alloc] initWithItems:self.arr cellIdentifier:@"cell" configureCellBlock:self.configureBlock];
     
     _demoListView.dataSource = self.dataSource;
+    _demoListView.delegate = self;
 
 }
 
--(void) initData{
+- (void) initData{
     
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //NSString *titileString = [self.arr:[indexPath row]];  //这个表示选中的那个cell上的数据
+    NSInteger rowNum = [indexPath row];
+    //    NSLog(@"执行tableview的点击事件:%d", rowNum);
+    if (0 == rowNum) {
+        NSLog(@"跳转到电子书的demo");
+        BookListViewController *bookListController = [[BookListViewController alloc] init];
+        [self presentViewController:bookListController animated:YES completion:nil];
+    }else{
+        NSLog(@"努力建设中。。。");
+    }
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"eBook";
+    self.view.backgroundColor = [UIColor brownColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    
+    [self loadData];
+}
+
+- (void)loadData{
+    
 }
 
 - (void)didReceiveMemoryWarning {

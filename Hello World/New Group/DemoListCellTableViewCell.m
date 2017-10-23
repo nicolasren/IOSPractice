@@ -25,10 +25,12 @@
     
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
         CGFloat cellWidth = [[UIApplication sharedApplication]keyWindow].bounds.size.width;
-        _demoName = [[UILabel alloc]initWithFrame:CGRectMake(0, 5, cellWidth, 60)];
+        _demoName = [[TextEdgeInsetsLabel alloc]initWithFrame:CGRectMake(0, 5, cellWidth, 60)];
         _demoName.backgroundColor = [UIColor whiteColor];
         _demoName.textColor = [UIColor blackColor];
         _demoName.textAlignment = NSTextAlignmentLeft;
+        _demoName.edgeInsets = UIEdgeInsetsMake(30, 15, 30, cellWidth);
+        [_demoName sizeToFit];
         _demoName.font = [UIFont systemFontOfSize:25];
         [self.contentView addSubview:_demoName];
     }
