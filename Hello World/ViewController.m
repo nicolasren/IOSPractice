@@ -49,19 +49,11 @@
     self.dataSource = [[DemoListDataSource alloc] initWithItems:self.arr cellIdentifier:@"cell" configureCellBlock:self.configureBlock];
     
     _demoListView.dataSource = self.dataSource;
-    _demoListView.delegate = self;
-    
+
 }
 
 -(void) initData{
     
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //NSString *titileString = [self.arr:[indexPath row]];  //这个表示选中的那个cell上的数据
-    NSInteger *rowNum = [indexPath row];
-    
-    NSLog(@"执行tableview的点击事件:%d", rowNum);
 }
 
 
