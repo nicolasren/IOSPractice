@@ -9,7 +9,7 @@
 #import "BookListViewController.h"
 
 @interface BookListViewController ()
-
+@property (strong, nonatomic) UILabel *titleLabel;
 @end
 
 @implementation BookListViewController
@@ -17,9 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"eBook";
-    self.view.backgroundColor = [UIColor brownColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+//    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    
+    //自定义标题
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0 , 100, 44)];
+    _titleLabel.backgroundColor = [UIColor clearColor];  //设置Label背景透明
+    _titleLabel.font = [UIFont boldSystemFontOfSize:20];  //设置文本字体与大小
+    _titleLabel.textColor = [UIColor blackColor];//[UIColor colorWithRed:(0.0/255.0) green:(255.0 / 255.0) blue:(0.0 / 255.0) alpha:1];  //设置文本颜色
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.text = @"eBook";  //设置标题
+    self.navigationItem.titleView = self.titleLabel;
+    
+//    self.navigationItem.title = @"eBook";
     
     [self loadData];
 }

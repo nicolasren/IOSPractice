@@ -11,7 +11,7 @@
 #import "DemoListCellTableViewCell.h"
 #import "BookListViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate>
 
 @property(nonatomic, strong) NSArray *arr;
 @property(nonatomic, strong) DemoListDataSource *dataSource;
@@ -34,6 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.title = @"Hello World";
+    
     self.view.backgroundColor = [UIColor whiteColor];
     _demoListView = [[UITableView alloc]initWithFrame:[[UIApplication sharedApplication].keyWindow bounds]];
     [_demoListView registerClass:[DemoListCellTableViewCell class] forCellReuseIdentifier:@"cell"];
@@ -63,9 +65,10 @@
     NSInteger rowNum = [indexPath row];
     //    NSLog(@"执行tableview的点击事件:%d", rowNum);
     if (0 == rowNum) {
-        NSLog(@"跳转到电子书的demo");
+//        NSLog(@"跳转到电子书的demo");
         BookListViewController *bookListController = [[BookListViewController alloc] init];
-        [self presentViewController:bookListController animated:YES completion:nil];
+//        [self presentViewController:bookListController animated:YES completion:nil];
+        [self.navigationController pushViewController:bookListController animated:YES ];
     }else{
         NSLog(@"努力建设中。。。");
     }
