@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong)NSString *bookName; //书名
 @property (nonatomic, strong)NSString *bookCoverUrl; //书籍封面URL
+@property (nonatomic, strong)NSString *bookUrl; //书籍的地址
 
 @end
 

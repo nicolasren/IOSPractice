@@ -36,8 +36,25 @@
 		E006ABDC1F9B33D3004E1430 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E006ABDB1F9B33D3004E1430 /* libxml2.tbd */; };
 		E006ABE21F9B49A2004E1430 /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE11F9B49A2004E1430 /* BookListViewController.m */; };
 		E006ABE51F9B49E0004E1430 /* BookListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */; };
-		E006ABEC1F9D8BC7004E1430 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEB1F9D8BC7004E1430 /* BookModel.m */; };
 		E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */; };
+		E006ABF21F9F10B1004E1430 /* 细说明朝.epub in Resources */ = {isa = PBXBuildFile; fileRef = E006ABF11F9F10B1004E1430 /* 细说明朝.epub */; };
+		E06103861FA06323009F648A /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103851FA06323009F648A /* BookModel.m */; };
+		E06103911FA063CC009F648A /* LSYChapterModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E06103881FA063CB009F648A /* LSYChapterModel.mm */; };
+		E06103921FA063CC009F648A /* LSYReadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103891FA063CB009F648A /* LSYReadModel.m */; };
+		E06103931FA063CC009F648A /* LSYNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E061038A1FA063CB009F648A /* LSYNoteModel.m */; };
+		E06103941FA063CC009F648A /* LSYRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E061038E1FA063CB009F648A /* LSYRecordModel.m */; };
+		E06103951FA063CC009F648A /* LSYMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103901FA063CC009F648A /* LSYMarkModel.m */; };
+		E061039D1FA0658F009F648A /* LSYReadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103981FA0658F009F648A /* LSYReadConfig.m */; };
+		E061039E1FA0658F009F648A /* LSYReadParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E061039A1FA0658F009F648A /* LSYReadParser.m */; };
+		E061039F1FA0658F009F648A /* LSYReadUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = E061039C1FA0658F009F648A /* LSYReadUtilites.m */; };
+		E06103A91FA065A6009F648A /* bt_tjcp_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E06103A01FA065A5009F648A /* bt_tjcp_no@2x.png */; };
+		E06103AA1FA065A6009F648A /* LSYMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103A21FA065A5009F648A /* LSYMenuView.m */; };
+		E06103AB1FA065A6009F648A /* LSYMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103A31FA065A5009F648A /* LSYMagnifierView.m */; };
+		E06103AC1FA065A6009F648A /* LSYTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103A61FA065A5009F648A /* LSYTopMenuView.m */; };
+		E06103AD1FA065A6009F648A /* LSYBottomMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103A81FA065A6009F648A /* LSYBottomMenuView.m */; };
+		E06103B51FA0670F009F648A /* LSYChapterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B01FA0670F009F648A /* LSYChapterVC.m */; };
+		E06103B61FA0670F009F648A /* LSYMarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B21FA0670F009F648A /* LSYMarkVC.m */; };
+		E06103B71FA0670F009F648A /* LSYNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B41FA0670F009F648A /* LSYNoteVC.m */; };
 		E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D9903E1F7203A3003437D8 /* AppDelegate.m */; };
 		E0D990421F7203A3003437D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D990411F7203A3003437D8 /* ViewController.m */; };
 		E0D990451F7203A3003437D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D990431F7203A3003437D8 /* Main.storyboard */; };
@@ -126,10 +143,42 @@
 		E006ABE11F9B49A2004E1430 /* BookListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookListViewController.m; sourceTree = "<group>"; };
 		E006ABE31F9B49E0004E1430 /* BookListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookListTableViewCell.h; sourceTree = "<group>"; };
 		E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookListTableViewCell.m; sourceTree = "<group>"; };
-		E006ABEA1F9D8BC7004E1430 /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BookModel.h; path = "Hello World/Reader/BookModel.h"; sourceTree = SOURCE_ROOT; };
-		E006ABEB1F9D8BC7004E1430 /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BookModel.m; path = "Hello World/Reader/BookModel.m"; sourceTree = SOURCE_ROOT; };
 		E006ABED1F9D8C7F004E1430 /* TextEdgeInsetsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextEdgeInsetsLabel.h; sourceTree = "<group>"; };
 		E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextEdgeInsetsLabel.m; sourceTree = "<group>"; };
+		E006ABF11F9F10B1004E1430 /* 细说明朝.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "细说明朝.epub"; sourceTree = "<group>"; };
+		E06103841FA06323009F648A /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		E06103851FA06323009F648A /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		E06103871FA063CB009F648A /* LSYNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYNoteModel.h; sourceTree = "<group>"; };
+		E06103881FA063CB009F648A /* LSYChapterModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LSYChapterModel.mm; sourceTree = "<group>"; };
+		E06103891FA063CB009F648A /* LSYReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadModel.m; sourceTree = "<group>"; };
+		E061038A1FA063CB009F648A /* LSYNoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYNoteModel.m; sourceTree = "<group>"; };
+		E061038B1FA063CB009F648A /* LSYRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYRecordModel.h; sourceTree = "<group>"; };
+		E061038C1FA063CB009F648A /* LSYMarkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYMarkModel.h; sourceTree = "<group>"; };
+		E061038D1FA063CB009F648A /* LSYReadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadModel.h; sourceTree = "<group>"; };
+		E061038E1FA063CB009F648A /* LSYRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYRecordModel.m; sourceTree = "<group>"; };
+		E061038F1FA063CB009F648A /* LSYChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYChapterModel.h; sourceTree = "<group>"; };
+		E06103901FA063CC009F648A /* LSYMarkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYMarkModel.m; sourceTree = "<group>"; };
+		E06103971FA0658F009F648A /* LSYReadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadConfig.h; sourceTree = "<group>"; };
+		E06103981FA0658F009F648A /* LSYReadConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadConfig.m; sourceTree = "<group>"; };
+		E06103991FA0658F009F648A /* LSYReadParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadParser.h; sourceTree = "<group>"; };
+		E061039A1FA0658F009F648A /* LSYReadParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadParser.m; sourceTree = "<group>"; };
+		E061039B1FA0658F009F648A /* LSYReadUtilites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadUtilites.h; sourceTree = "<group>"; };
+		E061039C1FA0658F009F648A /* LSYReadUtilites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadUtilites.m; sourceTree = "<group>"; };
+		E06103A01FA065A5009F648A /* bt_tjcp_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_tjcp_no@2x.png"; sourceTree = "<group>"; };
+		E06103A11FA065A5009F648A /* LSYMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYMenuView.h; sourceTree = "<group>"; };
+		E06103A21FA065A5009F648A /* LSYMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYMenuView.m; sourceTree = "<group>"; };
+		E06103A31FA065A5009F648A /* LSYMagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYMagnifierView.m; sourceTree = "<group>"; };
+		E06103A41FA065A5009F648A /* LSYMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYMagnifierView.h; sourceTree = "<group>"; };
+		E06103A51FA065A5009F648A /* LSYTopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYTopMenuView.h; sourceTree = "<group>"; };
+		E06103A61FA065A5009F648A /* LSYTopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYTopMenuView.m; sourceTree = "<group>"; };
+		E06103A71FA065A6009F648A /* LSYBottomMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYBottomMenuView.h; sourceTree = "<group>"; };
+		E06103A81FA065A6009F648A /* LSYBottomMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYBottomMenuView.m; sourceTree = "<group>"; };
+		E06103AF1FA0670F009F648A /* LSYChapterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYChapterVC.h; sourceTree = "<group>"; };
+		E06103B01FA0670F009F648A /* LSYChapterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYChapterVC.m; sourceTree = "<group>"; };
+		E06103B11FA0670F009F648A /* LSYMarkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYMarkVC.h; sourceTree = "<group>"; };
+		E06103B21FA0670F009F648A /* LSYMarkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYMarkVC.m; sourceTree = "<group>"; };
+		E06103B31FA0670F009F648A /* LSYNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYNoteVC.h; sourceTree = "<group>"; };
+		E06103B41FA0670F009F648A /* LSYNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYNoteVC.m; sourceTree = "<group>"; };
 		E0D9903A1F7203A3003437D8 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D9903D1F7203A3003437D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0D9903E1F7203A3003437D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -200,7 +249,10 @@
 		E006AB8A1F9B321D004E1430 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
-				E006ABDF1F9B4823004E1430 /* Modle */,
+				E06103AE1FA0670F009F648A /* CatalogVC */,
+				E06103961FA0658F009F648A /* Core */,
+				E06103831FA062DF009F648A /* Model */,
+				E006ABF01F9F102E004E1430 /* BookSource */,
 				E006ABDE1F9B4817004E1430 /* Controller */,
 				E006ABDD1F9B47FA004E1430 /* View */,
 				E006AB8B1F9B3298004E1430 /* Third */,
@@ -323,6 +375,15 @@
 		E006ABDD1F9B47FA004E1430 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E06103A01FA065A5009F648A /* bt_tjcp_no@2x.png */,
+				E06103A71FA065A6009F648A /* LSYBottomMenuView.h */,
+				E06103A81FA065A6009F648A /* LSYBottomMenuView.m */,
+				E06103A41FA065A5009F648A /* LSYMagnifierView.h */,
+				E06103A31FA065A5009F648A /* LSYMagnifierView.m */,
+				E06103A11FA065A5009F648A /* LSYMenuView.h */,
+				E06103A21FA065A5009F648A /* LSYMenuView.m */,
+				E06103A51FA065A5009F648A /* LSYTopMenuView.h */,
+				E06103A61FA065A5009F648A /* LSYTopMenuView.m */,
 				E006ABE31F9B49E0004E1430 /* BookListTableViewCell.h */,
 				E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */,
 			);
@@ -338,13 +399,57 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E006ABDF1F9B4823004E1430 /* Modle */ = {
+		E006ABF01F9F102E004E1430 /* BookSource */ = {
 			isa = PBXGroup;
 			children = (
-				E006ABEA1F9D8BC7004E1430 /* BookModel.h */,
-				E006ABEB1F9D8BC7004E1430 /* BookModel.m */,
+				E006ABF11F9F10B1004E1430 /* 细说明朝.epub */,
 			);
-			path = Modle;
+			path = BookSource;
+			sourceTree = "<group>";
+		};
+		E06103831FA062DF009F648A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E061038F1FA063CB009F648A /* LSYChapterModel.h */,
+				E06103881FA063CB009F648A /* LSYChapterModel.mm */,
+				E061038C1FA063CB009F648A /* LSYMarkModel.h */,
+				E06103901FA063CC009F648A /* LSYMarkModel.m */,
+				E06103871FA063CB009F648A /* LSYNoteModel.h */,
+				E061038A1FA063CB009F648A /* LSYNoteModel.m */,
+				E061038D1FA063CB009F648A /* LSYReadModel.h */,
+				E06103891FA063CB009F648A /* LSYReadModel.m */,
+				E061038B1FA063CB009F648A /* LSYRecordModel.h */,
+				E061038E1FA063CB009F648A /* LSYRecordModel.m */,
+				E06103841FA06323009F648A /* BookModel.h */,
+				E06103851FA06323009F648A /* BookModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E06103961FA0658F009F648A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E06103971FA0658F009F648A /* LSYReadConfig.h */,
+				E06103981FA0658F009F648A /* LSYReadConfig.m */,
+				E06103991FA0658F009F648A /* LSYReadParser.h */,
+				E061039A1FA0658F009F648A /* LSYReadParser.m */,
+				E061039B1FA0658F009F648A /* LSYReadUtilites.h */,
+				E061039C1FA0658F009F648A /* LSYReadUtilites.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E06103AE1FA0670F009F648A /* CatalogVC */ = {
+			isa = PBXGroup;
+			children = (
+				E06103AF1FA0670F009F648A /* LSYChapterVC.h */,
+				E06103B01FA0670F009F648A /* LSYChapterVC.m */,
+				E06103B11FA0670F009F648A /* LSYMarkVC.h */,
+				E06103B21FA0670F009F648A /* LSYMarkVC.m */,
+				E06103B31FA0670F009F648A /* LSYNoteVC.h */,
+				E06103B41FA0670F009F648A /* LSYNoteVC.m */,
+			);
+			path = CatalogVC;
 			sourceTree = "<group>";
 		};
 		E0D990311F7203A3003437D8 = {
@@ -511,6 +616,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E006ABF21F9F10B1004E1430 /* 细说明朝.epub in Resources */,
+				E06103A91FA065A6009F648A /* bt_tjcp_no@2x.png in Resources */,
 				E0D9904A1F7203A3003437D8 /* LaunchScreen.storyboard in Resources */,
 				E0D990471F7203A3003437D8 /* Assets.xcassets in Resources */,
 				E0D990451F7203A3003437D8 /* Main.storyboard in Resources */,
@@ -538,39 +645,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06103AA1FA065A6009F648A /* LSYMenuView.m in Sources */,
 				E006ABC91F9B3298004E1430 /* CXMLDocument.m in Sources */,
 				E006ABD31F9B3298004E1430 /* CTidy.m in Sources */,
-				E006ABEC1F9D8BC7004E1430 /* BookModel.m in Sources */,
 				4E6D96631F7A9DA50016A82D /* DemoListCellTableViewCell.m in Sources */,
 				E006ABC61F9B3298004E1430 /* CXMLDocument_CreationExtensions.m in Sources */,
+				E06103931FA063CC009F648A /* LSYNoteModel.m in Sources */,
+				E06103911FA063CC009F648A /* LSYChapterModel.mm in Sources */,
 				E0D990421F7203A3003437D8 /* ViewController.m in Sources */,
+				E06103951FA063CC009F648A /* LSYMarkModel.m in Sources */,
 				E006ABCA1F9B3298004E1430 /* CXMLDocument_PrivateExtensions.m in Sources */,
 				E006ABCE1F9B3298004E1430 /* CXMLNamespaceNode.m in Sources */,
 				E006ABCD1F9B3298004E1430 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				E061039E1FA0658F009F648A /* LSYReadParser.m in Sources */,
 				E006ABD41F9B3298004E1430 /* UIImage+ImageEffects.m in Sources */,
 				E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */,
 				4E6D965F1F74B7E00016A82D /* MainView.m in Sources */,
 				E006ABCB1F9B3298004E1430 /* CXMLElement.m in Sources */,
+				E061039F1FA0658F009F648A /* LSYReadUtilites.m in Sources */,
 				E0D9904D1F7203A3003437D8 /* main.m in Sources */,
 				E006ABD61F9B3298004E1430 /* mztools.c in Sources */,
 				E006ABCF1F9B3298004E1430 /* CXMLNode.m in Sources */,
+				E06103941FA063CC009F648A /* LSYRecordModel.m in Sources */,
 				E006ABC51F9B3298004E1430 /* NSString+HTML.m in Sources */,
 				E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */,
 				E006ABCC1F9B3298004E1430 /* CXMLElement_CreationExtensions.m in Sources */,
 				E006ABD11F9B3298004E1430 /* CXMLNode_XPathExtensions.m in Sources */,
+				E06103AD1FA065A6009F648A /* LSYBottomMenuView.m in Sources */,
+				E06103B61FA0670F009F648A /* LSYMarkVC.m in Sources */,
+				E06103AC1FA065A6009F648A /* LSYTopMenuView.m in Sources */,
 				E006ABD71F9B3298004E1430 /* unzip.c in Sources */,
 				E006ABD21F9B3298004E1430 /* CXMLUnsupportedNode.m in Sources */,
 				E006ABC71F9B3298004E1430 /* CXMLNode_CreationExtensions.m in Sources */,
 				E006ABD01F9B3298004E1430 /* CXMLNode_PrivateExtensions.m in Sources */,
+				E06103861FA06323009F648A /* BookModel.m in Sources */,
 				E006ABD91F9B3298004E1430 /* ZipArchive.mm in Sources */,
+				E06103921FA063CC009F648A /* LSYReadModel.m in Sources */,
 				E006ABE21F9B49A2004E1430 /* BookListViewController.m in Sources */,
 				4E6D96671F7A9EEB0016A82D /* DemoListDataSource.m in Sources */,
+				E061039D1FA0658F009F648A /* LSYReadConfig.m in Sources */,
 				E006ABC41F9B3298004E1430 /* LSYViewPagerVC.m in Sources */,
 				E006ABE51F9B49E0004E1430 /* BookListTableViewCell.m in Sources */,
 				E006ABC81F9B3298004E1430 /* CXHTMLDocument.m in Sources */,
 				E006ABD81F9B3298004E1430 /* zip.c in Sources */,
 				E006ABC31F9B3298004E1430 /* GTMNSString+HTML.m in Sources */,
+				E06103AB1FA065A6009F648A /* LSYMagnifierView.m in Sources */,
+				E06103B71FA0670F009F648A /* LSYNoteVC.m in Sources */,
 				E006ABD51F9B3298004E1430 /* ioapi.c in Sources */,
+				E06103B51FA0670F009F648A /* LSYChapterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +784,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -717,6 +840,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -738,6 +862,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KKG84L7UE7;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				HEADER_SEARCH_PATHS = " /usr/include/libxml2";
 				INFOPLIST_FILE = "Hello World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -754,6 +879,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KKG84L7UE7;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				HEADER_SEARCH_PATHS = " /usr/include/libxml2";
 				INFOPLIST_FILE = "Hello World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

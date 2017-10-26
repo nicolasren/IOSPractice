@@ -7,9 +7,11 @@
 //
 
 #import "BookListViewController.h"
+#import "BookModel.h"
 
 @interface BookListViewController ()
 @property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) NSArray *bookList;
 @end
 
 @implementation BookListViewController
@@ -35,6 +37,9 @@
 }
 
 - (void)loadData{
+    _bookList = [[NSArray alloc] init];
+    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"细说明朝"withExtension:@"epub"];
+    
     
 }
 
