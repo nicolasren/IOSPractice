@@ -33,7 +33,6 @@
 		E006ABD71F9B3298004E1430 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E006ABBD1F9B3298004E1430 /* unzip.c */; };
 		E006ABD81F9B3298004E1430 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E006ABBF1F9B3298004E1430 /* zip.c */; };
 		E006ABD91F9B3298004E1430 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = E006ABC21F9B3298004E1430 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E006ABDC1F9B33D3004E1430 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E006ABDB1F9B33D3004E1430 /* libxml2.tbd */; };
 		E006ABE21F9B49A2004E1430 /* BookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE11F9B49A2004E1430 /* BookListViewController.m */; };
 		E006ABE51F9B49E0004E1430 /* BookListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */; };
 		E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */; };
@@ -55,6 +54,12 @@
 		E06103B51FA0670F009F648A /* LSYChapterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B01FA0670F009F648A /* LSYChapterVC.m */; };
 		E06103B61FA0670F009F648A /* LSYMarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B21FA0670F009F648A /* LSYMarkVC.m */; };
 		E06103B71FA0670F009F648A /* LSYNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103B41FA0670F009F648A /* LSYNoteVC.m */; };
+		E06103BA1FA413C3009F648A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E06103B91FA413C3009F648A /* libz.tbd */; };
+		E06103BB1FA41601009F648A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E006ABDB1F9B33D3004E1430 /* libxml2.tbd */; };
+		E06103C21FA41913009F648A /* LSYCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103BC1FA41913009F648A /* LSYCatalogViewController.m */; };
+		E06103C31FA41913009F648A /* LSYReadPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103BE1FA41913009F648A /* LSYReadPageViewController.m */; };
+		E06103C41FA41913009F648A /* LSYReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103C01FA41913009F648A /* LSYReadViewController.m */; };
+		E06103C71FA41948009F648A /* LSYReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103C51FA41948009F648A /* LSYReadView.m */; };
 		E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D9903E1F7203A3003437D8 /* AppDelegate.m */; };
 		E0D990421F7203A3003437D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D990411F7203A3003437D8 /* ViewController.m */; };
 		E0D990451F7203A3003437D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D990431F7203A3003437D8 /* Main.storyboard */; };
@@ -180,6 +185,15 @@
 		E06103B31FA0670F009F648A /* LSYNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYNoteVC.h; sourceTree = "<group>"; };
 		E06103B41FA0670F009F648A /* LSYNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYNoteVC.m; sourceTree = "<group>"; };
 		E06103B81FA2C7B7009F648A /* LSYReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSYReader-Prefix.pch"; sourceTree = "<group>"; };
+		E06103B91FA413C3009F648A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E06103BC1FA41913009F648A /* LSYCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYCatalogViewController.m; sourceTree = "<group>"; };
+		E06103BD1FA41913009F648A /* LSYCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYCatalogViewController.h; sourceTree = "<group>"; };
+		E06103BE1FA41913009F648A /* LSYReadPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadPageViewController.m; sourceTree = "<group>"; };
+		E06103BF1FA41913009F648A /* LSYReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadViewController.h; sourceTree = "<group>"; };
+		E06103C01FA41913009F648A /* LSYReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadViewController.m; sourceTree = "<group>"; };
+		E06103C11FA41913009F648A /* LSYReadPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadPageViewController.h; sourceTree = "<group>"; };
+		E06103C51FA41948009F648A /* LSYReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadView.m; sourceTree = "<group>"; };
+		E06103C61FA41948009F648A /* LSYReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadView.h; sourceTree = "<group>"; };
 		E0D9903A1F7203A3003437D8 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D9903D1F7203A3003437D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0D9903E1F7203A3003437D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -203,7 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E006ABDC1F9B33D3004E1430 /* libxml2.tbd in Frameworks */,
+				E06103BB1FA41601009F648A /* libxml2.tbd in Frameworks */,
+				E06103BA1FA413C3009F648A /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +265,14 @@
 		E006AB8A1F9B321D004E1430 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				E06103C61FA41948009F648A /* LSYReadView.h */,
+				E06103C51FA41948009F648A /* LSYReadView.m */,
+				E06103BD1FA41913009F648A /* LSYCatalogViewController.h */,
+				E06103BC1FA41913009F648A /* LSYCatalogViewController.m */,
+				E06103C11FA41913009F648A /* LSYReadPageViewController.h */,
+				E06103BE1FA41913009F648A /* LSYReadPageViewController.m */,
+				E06103BF1FA41913009F648A /* LSYReadViewController.h */,
+				E06103C01FA41913009F648A /* LSYReadViewController.m */,
 				E06103B81FA2C7B7009F648A /* LSYReader-Prefix.pch */,
 				E06103AE1FA0670F009F648A /* CatalogVC */,
 				E06103961FA0658F009F648A /* Core */,
@@ -369,6 +392,7 @@
 		E006ABDA1F9B33D3004E1430 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E06103B91FA413C3009F648A /* libz.tbd */,
 				E006ABDB1F9B33D3004E1430 /* libxml2.tbd */,
 			);
 			name = Frameworks;
@@ -650,7 +674,9 @@
 				E06103AA1FA065A6009F648A /* LSYMenuView.m in Sources */,
 				E006ABC91F9B3298004E1430 /* CXMLDocument.m in Sources */,
 				E006ABD31F9B3298004E1430 /* CTidy.m in Sources */,
+				E06103C71FA41948009F648A /* LSYReadView.m in Sources */,
 				4E6D96631F7A9DA50016A82D /* DemoListCellTableViewCell.m in Sources */,
+				E06103C31FA41913009F648A /* LSYReadPageViewController.m in Sources */,
 				E006ABC61F9B3298004E1430 /* CXMLDocument_CreationExtensions.m in Sources */,
 				E06103931FA063CC009F648A /* LSYNoteModel.m in Sources */,
 				E06103911FA063CC009F648A /* LSYChapterModel.mm in Sources */,
@@ -666,12 +692,14 @@
 				E006ABCB1F9B3298004E1430 /* CXMLElement.m in Sources */,
 				E061039F1FA0658F009F648A /* LSYReadUtilites.m in Sources */,
 				E0D9904D1F7203A3003437D8 /* main.m in Sources */,
+				E06103C21FA41913009F648A /* LSYCatalogViewController.m in Sources */,
 				E006ABD61F9B3298004E1430 /* mztools.c in Sources */,
 				E006ABCF1F9B3298004E1430 /* CXMLNode.m in Sources */,
 				E06103941FA063CC009F648A /* LSYRecordModel.m in Sources */,
 				E006ABC51F9B3298004E1430 /* NSString+HTML.m in Sources */,
 				E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */,
 				E006ABCC1F9B3298004E1430 /* CXMLElement_CreationExtensions.m in Sources */,
+				E06103C41FA41913009F648A /* LSYReadViewController.m in Sources */,
 				E006ABD11F9B3298004E1430 /* CXMLNode_XPathExtensions.m in Sources */,
 				E06103AD1FA065A6009F648A /* LSYBottomMenuView.m in Sources */,
 				E06103B61FA0670F009F648A /* LSYMarkVC.m in Sources */,
@@ -786,7 +814,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -843,7 +871,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -866,7 +894,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KKG84L7UE7;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Hello World/Reader/LSYReader-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Hello World/Info.plist";
@@ -885,7 +914,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KKG84L7UE7;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Hello World/Reader/LSYReader-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Hello World/Info.plist";
