@@ -59,6 +59,7 @@
 		E06103C31FA41913009F648A /* LSYReadPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103BE1FA41913009F648A /* LSYReadPageViewController.m */; };
 		E06103C41FA41913009F648A /* LSYReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103C01FA41913009F648A /* LSYReadViewController.m */; };
 		E06103C71FA41948009F648A /* LSYReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103C51FA41948009F648A /* LSYReadView.m */; };
+		E06103CB1FA44FB1009F648A /* BookListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103CA1FA44FB1009F648A /* BookListDataSource.m */; };
 		E0D9903F1F7203A3003437D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D9903E1F7203A3003437D8 /* AppDelegate.m */; };
 		E0D990421F7203A3003437D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D990411F7203A3003437D8 /* ViewController.m */; };
 		E0D990451F7203A3003437D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D990431F7203A3003437D8 /* Main.storyboard */; };
@@ -191,6 +192,8 @@
 		E06103C11FA41913009F648A /* LSYReadPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadPageViewController.h; sourceTree = "<group>"; };
 		E06103C51FA41948009F648A /* LSYReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadView.m; sourceTree = "<group>"; };
 		E06103C61FA41948009F648A /* LSYReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYReadView.h; sourceTree = "<group>"; };
+		E06103C91FA44FB1009F648A /* BookListDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookListDataSource.h; sourceTree = "<group>"; };
+		E06103CA1FA44FB1009F648A /* BookListDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookListDataSource.m; sourceTree = "<group>"; };
 		E0D9903A1F7203A3003437D8 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D9903D1F7203A3003437D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0D9903E1F7203A3003437D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -262,6 +265,7 @@
 		E006AB8A1F9B321D004E1430 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				E06103C81FA44F6C009F648A /* DataDelegate */,
 				E06103C61FA41948009F648A /* LSYReadView.h */,
 				E06103C51FA41948009F648A /* LSYReadView.m */,
 				E06103BD1FA41913009F648A /* LSYCatalogViewController.h */,
@@ -473,6 +477,15 @@
 			path = CatalogVC;
 			sourceTree = "<group>";
 		};
+		E06103C81FA44F6C009F648A /* DataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E06103C91FA44FB1009F648A /* BookListDataSource.h */,
+				E06103CA1FA44FB1009F648A /* BookListDataSource.m */,
+			);
+			path = DataDelegate;
+			sourceTree = "<group>";
+		};
 		E0D990311F7203A3003437D8 = {
 			isa = PBXGroup;
 			children = (
@@ -675,6 +688,7 @@
 				E006ABC61F9B3298004E1430 /* CXMLDocument_CreationExtensions.m in Sources */,
 				E06103931FA063CC009F648A /* LSYNoteModel.m in Sources */,
 				E06103911FA063CC009F648A /* LSYChapterModel.mm in Sources */,
+				E06103CB1FA44FB1009F648A /* BookListDataSource.m in Sources */,
 				E0D990421F7203A3003437D8 /* ViewController.m in Sources */,
 				E06103951FA063CC009F648A /* LSYMarkModel.m in Sources */,
 				E006ABCA1F9B3298004E1430 /* CXMLDocument_PrivateExtensions.m in Sources */,
