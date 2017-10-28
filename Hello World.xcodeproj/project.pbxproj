@@ -37,7 +37,6 @@
 		E006ABE51F9B49E0004E1430 /* BookListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABE41F9B49E0004E1430 /* BookListTableViewCell.m */; };
 		E006ABEF1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */; };
 		E006ABF21F9F10B1004E1430 /* 细说明朝.epub in Resources */ = {isa = PBXBuildFile; fileRef = E006ABF11F9F10B1004E1430 /* 细说明朝.epub */; };
-		E06103861FA06323009F648A /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103851FA06323009F648A /* BookModel.m */; };
 		E06103911FA063CC009F648A /* LSYChapterModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = E06103881FA063CB009F648A /* LSYChapterModel.mm */; };
 		E06103921FA063CC009F648A /* LSYReadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06103891FA063CB009F648A /* LSYReadModel.m */; };
 		E06103931FA063CC009F648A /* LSYNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E061038A1FA063CB009F648A /* LSYNoteModel.m */; };
@@ -151,8 +150,6 @@
 		E006ABED1F9D8C7F004E1430 /* TextEdgeInsetsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextEdgeInsetsLabel.h; sourceTree = "<group>"; };
 		E006ABEE1F9D8C7F004E1430 /* TextEdgeInsetsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextEdgeInsetsLabel.m; sourceTree = "<group>"; };
 		E006ABF11F9F10B1004E1430 /* 细说明朝.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "细说明朝.epub"; sourceTree = "<group>"; };
-		E06103841FA06323009F648A /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
-		E06103851FA06323009F648A /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		E06103871FA063CB009F648A /* LSYNoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSYNoteModel.h; sourceTree = "<group>"; };
 		E06103881FA063CB009F648A /* LSYChapterModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LSYChapterModel.mm; sourceTree = "<group>"; };
 		E06103891FA063CB009F648A /* LSYReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSYReadModel.m; sourceTree = "<group>"; };
@@ -446,8 +443,6 @@
 				E06103891FA063CB009F648A /* LSYReadModel.m */,
 				E061038B1FA063CB009F648A /* LSYRecordModel.h */,
 				E061038E1FA063CB009F648A /* LSYRecordModel.m */,
-				E06103841FA06323009F648A /* BookModel.h */,
-				E06103851FA06323009F648A /* BookModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -708,7 +703,6 @@
 				E006ABD21F9B3298004E1430 /* CXMLUnsupportedNode.m in Sources */,
 				E006ABC71F9B3298004E1430 /* CXMLNode_CreationExtensions.m in Sources */,
 				E006ABD01F9B3298004E1430 /* CXMLNode_PrivateExtensions.m in Sources */,
-				E06103861FA06323009F648A /* BookModel.m in Sources */,
 				E006ABD91F9B3298004E1430 /* ZipArchive.mm in Sources */,
 				E06103921FA063CC009F648A /* LSYReadModel.m in Sources */,
 				E006ABE21F9B49A2004E1430 /* BookListViewController.m in Sources */,

@@ -7,11 +7,12 @@
 //
 
 #import "BookListViewController.h"
-#import "BookModel.h"
+#import "LSYReadModel.h"
 
 @interface BookListViewController ()
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) NSArray *bookList;
+@property (nonatomic,strong) LSYReadModel *bookModel;
 @end
 
 @implementation BookListViewController
@@ -39,6 +40,10 @@
 - (void)loadData{
     _bookList = [[NSArray alloc] init];
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"细说明朝"withExtension:@"epub"];
+    _bookModel = [LSYReadModel getLocalModelWithURL:<#(NSURL *)#>:fileURL];
+    
+    
+    
     
     
 }
