@@ -10,6 +10,7 @@
 
 @interface BookListTableViewCell()
 @property (nonatomic, strong)UILabel *bookName;
+@property (nonatomic, strong)UILabel *bookMark;
 @property (nonatomic, strong)UIImageView *bookCover;
 
 @end
@@ -30,11 +31,16 @@
 - (instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
    if(self = [super initWithStyle: style reuseIdentifier: reuseIdentifier]){
-        _bookCover = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 60, 80)];
+       _bookCover = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 60, 80)];
+       _bookName = [[UILabel alloc] initWithFrame:CGRectMake(70, 10, 400, 40)];
+       _bookMark = [[UILabel alloc] initWithFrame:CGRectMake(70, 55, 400, 30)];
+       
         
     }
     
     return self;
 }
+
+
 
 @end

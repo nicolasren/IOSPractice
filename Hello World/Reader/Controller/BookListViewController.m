@@ -8,11 +8,17 @@
 
 #import "BookListViewController.h"
 #import "LSYReadModel.h"
+#import "BookListTableViewCell.h"
+#import "BookListDataSource.h"
 
-@interface BookListViewController ()
+@interface BookListViewController ()<UITableViewDelegate>
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) NSArray *bookList;
-@property (nonatomic,strong) LSYReadModel *bookModel;
+@property (nonatomic, strong) LSYReadModel *bookModel;
+@property (nonatomic, strong) UITableView *bookTableView;
+@property (nonatomic, strong) BookListDataSource *dataSource;
+@property (nonatomic, strong) TableViewCellConfigureBlock configureCell;
+
 @end
 
 @implementation BookListViewController
@@ -34,16 +40,29 @@
     
 //    self.navigationItem.title = @"eBook";
     
+    _bookTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [_bookTableView registerClass:[BookListTableViewCell class] forCellReuseIdentifier:@"cell"];
+    _bookTableView.rowHeight = 100;
+    _bookTableView.delegate = self;
+    
+    [self.view addSubview:_bookTableView];
+    
+    
     [self loadData];
 }
 
 - (void)loadData{
     _bookList = [[NSArray alloc] init];
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"细说明朝"withExtension:@"epub"];
-    _bookModel = [LSYReadModel getLocalModelWithURL:<#(NSURL *)#>:fileURL];
+    _bookModel = [LSYReadModel getLocalModelWithURL:fileURL];
+    
+    NSMutableArray *booksArray = [[NSMutableArray alloc] init];
+    [booksArray addObject:_bookModel];
     
     
     
+    self.dataSource = [[BookListDataSource alloc]initWithItmes:booksArray cellIndetifierString:@"cell" configureCellBlock:self.configureCell];
+    _bookTableView.dataSource = self.dataSource;
     
     
 }
